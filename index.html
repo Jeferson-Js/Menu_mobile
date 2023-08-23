@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu mobile</title>
+    <link rel="shortcut icon" href="./img/smartphone.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="./js/main.js" defer></script>
+</head>
+<body class="bg-teal-400">
+    <header class="flex">
+        <nav class="flex justify-between items-center w-full h-16 p-4 bg-white">
+            <span class="flex items-center gap-2">
+                <img src="./img/smartphone.png" alt="smartphone" class="w-12 h-12">
+                <h2 class="lg:text-lg md:text-base text-sm text-teal-400 font-semibold">Oliveira.js</h2>
+            </span>
+            <span class="text-3xl text-teal-400 flex items-center cursor-pointer ml-auto lg:hidden md:hidden">
+                <ion-icon name="menu" onclick="btnMobile(this)"></ion-icon>
+            </span>
+            <!-- lista desktop -->
+            <ul class="hidden lg:flex lg:items-center lg:gap-4">
+                <li class="text-base text-teal-400 hover:text-teal-300 font-serif duration-700"><a href="#">Home</a></li>
+                <li class="text-base text-teal-400 hover:text-teal-300 font-serif duration-700"><a href="#">About</a></li>
+                <li class="text-base text-teal-400 hover:text-teal-300 font-serif duration-700"><a href="#">Contact</a></li>
+            </ul>
+            <!-- lista mobile -->
+            <div class="lg:hidden md:hidden">
+                <ul class="hidden flex-col items-center absolute top-16 left-0 bg-white w-full h-40 shadow-lg opacity-0 transition-opacity duration-300" id="list-mobile">
+                    <li class="text-base text-teal-400 m-6 hover:text-teal-300 font-serif duration-700"><a href="#">Home</a></li>
+                    <li class="text-base text-teal-400 m-6 hover:text-teal-300 font-serif duration-700"><a href="#">About</a></li>
+                    <li class="text-base text-teal-400 m-6 hover:text-teal-300 font-serif duration-700"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+</body>
+</html>
